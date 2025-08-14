@@ -1,212 +1,624 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Resume Design Portfolio</title>
-  <meta name="description" content="Creative Resume (CV) Design and Writing Services.">
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="assets/icons/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Professional resume design services - Transform your career with expertly crafted CVs">
+    <title>Professional Resume Design Services | Your Career Gateway</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Hero Section -->
-  <header class="hero" id="hero" style="background-image: url('assets/images/hero-bg.jpg');" role="banner">
-    <nav class="navbar" aria-label="Main navigation">
-      <a href="#hero" class="nav-logo" aria-label="Home">MyResumeDesign</a>
-      <button id="navToggle" aria-label="Toggle navigation" aria-controls="navLinks" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#about">About</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Testimonials</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="hero-content" role="region" aria-label="Intro">
-      <h1>Transforming Your Resume into a Gateway to Opportunities</h1>
-      <p>Your next career breakthrough starts with a standout CV.</p>
-      <a href="#portfolio" class="cta-button">View My Work</a>
-    </div>
-  </header>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- About Section -->
-  <section class="about" id="about">
-    <div class="about-image">
-      <img src="assets/images/avatar.jpg" alt="Professional portrait" width="180" height="180" />
-    </div>
-    <div class="about-text">
-      <h2>About Me</h2>
-      <p>Hello! I'm <strong>[Your Name]</strong>, a resume designer passionate about helping professionals succeed.</p>
-      <p>I believe a resume isn’t just a document — it’s your personal success story.</p>
-      <p>My approach combines modern design with deep industry insight to boost your career prospects.</p>
-    </div>
-  </section>
-
-  <!-- Portfolio Section -->
-  <section class="portfolio" id="portfolio">
-    <h2>Portfolio</h2>
-    <div class="portfolio-categories">
-      <button data-category="all">All</button>
-      <button data-category="classic">Classic</button>
-      <button data-category="modern">Modern</button>
-      <button data-category="creative">Creative</button>
-    </div>
-    <div class="portfolio-grid">
-      <!-- Example Portfolio Item -->
-      <div class="portfolio-item classic" tabindex="0" aria-label="Classic Resume Design">
-        <img src="assets/images/cv1.jpg" alt="Classic Resume Design Sample" />
-        <div class="portfolio-description">
-          <h3>Classic Blue</h3>
-          <p>Style: Classic<br>Colors: Blue/White<br>Field: Management</p>
+    <!-- Navigation -->
+    <nav class="navbar" role="navigation" aria-label="Main navigation">
+        <div class="container">
+            <a href="#" class="logo" aria-label="Home">
+                <h2>Resume<span>Craft</span></h2>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav-links" role="menubar">
+                <li role="none"><a href="#home" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" role="menuitem">About</a></li>
+                <li role="none"><a href="#portfolio" role="menuitem">Portfolio</a></li>
+                <li role="none"><a href="#services" role="menuitem">Services</a></li>
+                <li role="none"><a href="#testimonials" role="menuitem">Testimonials</a></li>
+                <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
+            </ul>
         </div>
-      </div>
-      <!-- Repeat for more portfolio items with different classes/categories -->
-    </div>
+    </nav>
+
+    <main id="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-heading">
+            <div class="hero-bg">
+                <!-- Replace this image with your actual hero background -->
+                <img src="assets/images/hero-bg.jpg" alt="Professional workspace with resume design" loading="lazy">
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 id="hero-heading">Transforming Your Resume into a Gateway to Opportunities</h1>
+                    <p>Professional, modern, and ATS-optimized resume designs that make you stand out</p>
+                    <div class="hero-buttons">
+                        <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Order Your Design Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about" aria-labelledby="about-heading">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-image">
+                        <!-- Replace with your professional portrait -->
+                        <img src="assets/images/profile.jpg" alt="Professional portrait of resume designer" loading="lazy">
+                    </div>
+                    <div class="about-content">
+                        <h2 id="about-heading">About Me</h2>
+                        <p>Hello! I'm a passionate resume designer with over 5 years of experience in creating compelling career documents. I believe a resume isn't just a document — it's your personal success story.</p>
+                        <p>My expertise lies in understanding what employers look for and translating your unique skills and experiences into a visually appealing and ATS-friendly format that gets you noticed.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <h3>500+</h3>
+                                <p>Resumes Designed</p>
+                            </div>
+                            <div class="stat">
+                                <h3>98%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                            <div class="stat">
+                                <h3>48h</h3>
+                                <p>Average Delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="portfolio" aria-labelledby="portfolio-heading">
+            <div class="container">
+                <h2 id="portfolio-heading" class="section-title">My Portfolio</h2>
+                <p class="section-subtitle">Explore my latest resume designs across different styles</p>
+                
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="classic">Classic</button>
+                    <button class="filter-btn" data-filter="modern">Modern</button>
+                    <button class="filter-btn" data-filter="creative">Creative</button>
+                </div>
+                
+                <div class="portfolio-grid">
+                    <!-- Portfolio Item 1 - Classic -->
+                    <div class="portfolio-item" data-category="classic">
+                        <div class="portfolio-image">
+                            <img src="assets/images/resume1.jpg" alt="Classic resume design example" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" aria-label="View larger image">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Executive Classic</h3>
+                            <p>Traditional design for senior professionals</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 2 - Modern -->
+                    <div class="portfolio-item" data-category="modern">
+                        <div class="portfolio-image">
+                            <img src="assets/images/resume2.jpg" alt="Modern resume design example" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" aria-label="View larger image">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Tech Modern</h3>
+                            <p>Clean design for IT and tech professionals</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 3 - Creative -->
+                    <div class="portfolio-item" data-category="creative">
+                        <div class="portfolio-image">
+                            <img src="assets/images/resume3.jpg" alt="Creative resume design example" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" aria-label="View larger image">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Creative Portfolio</h3>
+                            <p>Artistic design for creative industries</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 4 - Classic -->
+                    <div class="portfolio-item" data-category="classic">
+                        <div class="portfolio-image">
+                            <img src="assets/images/resume4.jpg" alt="Classic resume design example" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" aria-label="View larger image">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Academic Classic</h3>
+                            <p>Professional design for educators and researchers</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 5 - Modern -->
+                    <div class="portfolio-item" data-category="modern">
+                        <div class="portfolio-image">
+                            <img src="assets/images/resume5.jpg" alt="Modern resume design example" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" aria-label="View larger image">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Minimalist Modern</h3>
+                            <p>Sleek design for contemporary professionals</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Portfolio Item 6 - Creative -->
+                    <div class="portfolio-item" data-category="creative">
+                        <div class="portfolio-image">
+                            <img src="assets/images/resume6.jpg" alt="Creative resume design example" loading="lazy">
+                            <div class="portfolio-overlay">
+                                <button class="view-btn" aria-label="View larger image">
+                                    <i class="fas fa-expand"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="portfolio-info">
+                            <h3>Designer Creative</h3>
+                            <p>Bold design for designers and artists</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="services" aria-labelledby="services-heading">
+            <div class="container">
+                <h2 id="services-heading" class="section-title">My Services</h2>
+                <p class="section-subtitle">Professional resume design packages tailored to your needs</p>
+                
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Resume Design from Scratch</h3>
+                        <p class="price">Starting at $79</p>
+                        <ul class="service-features">
+                            <li>Custom design from your information</li>
+                            <li>2 rounds of revisions</li>
+                            <li>ATS-optimized format</li>
+                            <li>PDF and Word formats</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-edit"></i>
+                        </div>
+                        <h3>Resume Improvement & Optimization</h3>
+                        <p class="price">Starting at $49</p>
+                        <ul class="service-features">
+                            <li>Redesign of existing resume</li>
+                            <li>Content optimization</li>
+                            <li>1 round of revisions</li>
+                            <li>ATS compatibility check</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Cover Letter Creation</h3>
+                        <p class="price">Starting at $39</p>
+                        <ul class="service-features">
+                            <li>Custom cover letter design</li>
+                            <li>Tailored to specific job</li>
+                            <li>Professional tone</li>
+                            <li>Matching resume style</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                    
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-language"></i>
+                        </div>
+                        <h3>Bilingual Resume (English/Arabic)</h3>
+                        <p class="price">Starting at $99</p>
+                        <ul class="service-features">
+                            <li>Professional translation</li>
+                            <li>Cultural adaptation</li>
+                            <li>RTL layout optimization</li>
+                            <li>3 rounds of revisions</li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="testimonials" aria-labelledby="testimonials-heading">
+            <div class="container">
+                <h2 id="testimonials-heading" class="section-title">What My Clients Say</h2>
+                <p class="section-subtitle">Real feedback from professionals who landed their dream jobs</p>
+                
+                <div class="testimonials-slider">
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The resume design was absolutely perfect! I got 3 interview calls within a week of applying. Highly recommended!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client1.jpg" alt="Sarah Johnson" loading="lazy">
+                            <div>
+                                <h4>Sarah Johnson</h4>
+                                <p>Marketing Manager</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"Professional, fast, and exactly what I needed. The bilingual resume helped me land a job in Dubai!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client2.jpg" alt="Ahmed Hassan" loading="lazy">
+                            <div>
+                                <h4>Ahmed Hassan</h4>
+                                <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p>"The creative resume design made me stand out in the design industry. Got the job I wanted!"</p>
+                        </div>
+                        <div class="testimonial-author">
+                            <img src="assets/images/client3.jpg" alt="Emily Chen" loading="lazy">
+                            <div>
+                                <h4>Emily Chen</h4>
+                                <p>UI/UX Designer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works" class="how-it-works" aria-labelledby="process-heading">
+            <div class="container">
+                <h2 id="process-heading" class="section-title">How It Works</h2>
+                <p class="section-subtitle">Simple 4-step process to get your perfect resume</p>
+                
+                <div class="process-grid">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <div class="step-icon">
+                            <i class="fas fa-user-edit"></i>
+                        </div>
+                        <h3>Client sends details</h3>
+                        <p>Share your current resume, career goals, and target positions</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <div class="step-icon">
+                            <i class="fas fa-drafting-compass"></i>
+                        </div>
+                        <h3>Initial draft</h3>
+                        <p>Receive your custom-designed resume draft within 48 hours</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <div class="step-icon">
+                            <i class="fas fa-sync-alt"></i>
+                        </div>
+                        <h3>Revisions</h3>
+                        <p>Request changes and refinements until you're 100% satisfied</p>
+                    </div>
+                    
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <div class="step-icon">
+                            <i class="fas fa-file-download"></i>
+                        </div>
+                        <h3>Final delivery</h3>
+                        <p>Get your resume in PDF and Word formats, ready to impress</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="faq" aria-labelledby="faq-heading">
+            <div class="container">
+                <h2 id="faq-heading" class="section-title">Frequently Asked Questions</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>How long does it take to design a resume?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Most resumes are delivered within 48 hours. For complex designs or bilingual resumes, it may take up to 72 hours. Rush delivery options are available for an additional fee.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Can I request changes after delivery?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! Each package includes a specific number of revision rounds. Additional revisions can be requested for a small fee. I want you to be completely satisfied with your resume.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>In what format will I receive the final file?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>You'll receive your resume in both PDF (print-ready) and Word (editable) formats. The PDF is optimized for ATS systems, while the Word file allows you to make future updates.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" aria-expanded="false">
+                            <span>Do you provide content writing services?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes! I can help rewrite and optimize your resume content to highlight your achievements and skills effectively. This includes keyword optimization for ATS systems.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" aria-labelledby="contact-heading">
+            <div class="container">
+                <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">Ready to transform your career? Let's create something amazing together</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name">Your Name *</label>
+                                <input type="text" id="name" name="name" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" required aria-required="true">
+                                <span class="error-message" aria-live="polite"></span>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="service">Service Interested In</label>
+                                <select id="service" name="service">
+                                    <option value="">Select a service</option>
+                                    <option value="resume-design">Resume Design from Scratch</option>
+                                    <option value="resume-improvement">Resume Improvement</option>
+                                    <option value="cover-letter">Cover Letter Creation</option>
+                                    <option value="bilingual">Bilingual Resume</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                    
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:hello@resumecraft.com">hello@resumecraft.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h3>Phone</h3>
+                                <a href="tel:+1234567890">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h3>Business Hours</h3>
+                                <p>Monday - Friday: 9AM - 6PM EST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h3>Connect With Me</h3>
+                            <div class="social-icons">
+                                <a href="#" aria-label="WhatsApp">
+                                    <img src="assets/images/icons/whatsapp.svg" alt="WhatsApp" loading="lazy">
+                                </a>
+                                <a href="#" aria-label="LinkedIn">
+                                    <img src="assets/images/icons/linkedin.svg" alt="LinkedIn" loading="lazy">
+                                </a>
+                                <a href="#" aria-label="Email">
+                                    <img src="assets/images/icons/email.svg" alt="Email" loading="lazy">
+                                </a>
+                                <a href="#" aria-label="Facebook">
+                                    <img src="assets/images/icons/facebook.svg" alt="Facebook" loading="lazy">
+                                </a>
+                                <a href="#" aria-label="Instagram">
+                                    <img src="assets/images/icons/instagram.svg" alt="Instagram" loading="lazy">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Promotional Banner -->
+    <section class="promo-banner" aria-labelledby="promo-heading">
+        <div class="container">
+            <div class="promo-content">
+                <h2 id="promo-heading">Limited Offer!</h2>
+                <p>Free Cover Letter Design for the First 10 Clients This Month!</p>
+                <a href="#contact" class="btn btn-secondary">Claim Your Offer Now</a>
+            </div>
+            <div class="social-follow">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Resume<span>Craft</span></h2>
+                    <p>Professional resume design services that open doors to opportunities.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-envelope"></i> hello@resumecraft.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (234) 567-890</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ResumeCraft. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
     <!-- Lightbox Modal -->
-    <div id="lightbox" class="lightbox" aria-modal="true" role="dialog" tabindex="-1">
-      <span class="lightbox-close" aria-label="Close">&times;</span>
-      <img class="lightbox-content" alt="Enlarged Resume Design" />
-      <div class="lightbox-caption"></div>
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="lightbox-content">
+            <button class="lightbox-close" aria-label="Close lightbox">
+                <i class="fas fa-times"></i>
+            </button>
+            <img src="" alt="" id="lightbox-image">
+        </div>
     </div>
-  </section>
 
-  <!-- Services Section -->
-  <section class="services" id="services">
-    <h2>Services</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <h3>Resume Design from Scratch</h3>
-        <p>Starting at $99</p>
-        <ul>
-          <li>Modern, custom design</li>
-          <li>2 rounds of revisions</li>
-          <li>PDF &amp; Word</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <h3>Resume Improvement &amp; Optimization</h3>
-        <p>Starting at $59</p>
-        <ul>
-          <li>Layout &amp; keyword updates</li>
-          <li>1 round of revision</li>
-          <li>PDF &amp; Word</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <h3>Cover Letter Creation</h3>
-        <p>Starting at $29</p>
-        <ul>
-          <li>Tailored to job</li>
-          <li>1 revision</li>
-          <li>PDF &amp; Word</li>
-        </ul>
-      </div>
-      <div class="service-card">
-        <h3>Bilingual Resume (English/Arabic)</h3>
-        <p>Starting at $149</p>
-        <ul>
-          <li>Arabic/English side-by-side</li>
-          <li>2 rounds of revisions</li>
-          <li>PDF &amp; Word</li>
-        </ul>
-      </div>
+    <!-- Success Message Modal -->
+    <div id="successModal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out. I'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary modal-btn">Close</button>
+        </div>
     </div>
-  </section>
 
-  <!-- Testimonials Section -->
-  <section class="testimonials" id="testimonials">
-    <h2>Testimonials</h2>
-    <div class="testimonials-list">
-      <div class="testimonial">
-        <img src="assets/images/testimonial1.jpg" alt="Client Ava B." />
-        <blockquote>“Incredible quality and super fast turnaround! My resume landed me interviews within days.”</blockquote>
-        <span>⭐️⭐️⭐️⭐️⭐️</span>
-        <p class="client-name">Ava B.</p>
-      </div>
-      <div class="testimonial">
-        <img src="assets/images/testimonial2.jpg" alt="Client Liam S." />
-        <blockquote>“The new design matched my personality &amp; boosted my confidence. Highly recommend!”</blockquote>
-        <span>⭐️⭐️⭐️⭐️⭐️</span>
-        <p class="client-name">Liam S.</p>
-      </div>
-      <!-- Add 2-3 more fake testimonials -->
-    </div>
-  </section>
-
-  <!-- How It Works Section -->
-  <section class="how" id="how">
-    <h2>How It Works</h2>
-    <div class="how-steps">
-      <div class="how-step">
-        <img src="assets/icons/step1.svg" alt="Step 1: Send Details" />
-        <h3>1. Send Your Details</h3>
-      </div>
-      <div class="how-step">
-        <img src="assets/icons/step2.svg" alt="Step 2: Initial Draft" />
-        <h3>2. Initial Draft</h3>
-      </div>
-      <div class="how-step">
-        <img src="assets/icons/step3.svg" alt="Step 3: Revisions" />
-        <h3>3. Revisions</h3>
-      </div>
-      <div class="how-step">
-        <img src="assets/icons/step4.svg" alt="Step 4: Delivery" />
-        <h3>4. Final Delivery</h3>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ Section -->
-  <section class="faq" id="faq">
-    <h2>FAQ</h2>
-    <dl>
-      <dt>How long does it take to design a resume?</dt>
-      <dd>Usually 2–4 days, depending on package and client feedback.</dd>
-      <dt>Can I request changes after delivery?</dt>
-      <dd>Yes, each package includes at least one free revision.</dd>
-      <dt>In what format will I receive my resume?</dt>
-      <dd>PDF and editable Word (.docx) files.</dd>
-    </dl>
-  </section>
-
-  <!-- Contact Section -->
-  <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <form class="contact-form" autocomplete="off" aria-label="Contact form">
-      <label for="name">Name</label>
-      <input type="text" id="name" name="name" required placeholder="Your Name" aria-required="true" />
-      <label for="email">Email</label>
-      <input type="email" id="email" name="email" required placeholder="your@email.com" aria-required="true" />
-      <label for="message">Message</label>
-      <textarea id="message" name="message" required placeholder="How can I help?" aria-required="true"></textarea>
-      <button type="submit" class="submit-btn">Send Message</button>
-    </form>
-    <div class="contact-direct">
-      <a href="mailto:your@email.com" aria-label="Email">Email</a> | 
-      <a href="https://wa.me/yourwhatsapplink" aria-label="WhatsApp">WhatsApp</a> |
-      <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn">LinkedIn</a>
-      <div class="contact-details">
-        <p>Email: your@email.com</p>
-        <p>WhatsApp: +123456789</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Promo Banner + Social Buttons -->
-  <section class="promo-banner">
-    <p><strong>Limited Offer: Free Cover Letter Design for the First 10 Clients!</strong></p>
-    <div class="social-buttons">
-      <a href="#" aria-label="Follow on Instagram"><img src="assets/icons/instagram.svg" alt="" /></a>
-      <a href="#" aria-label="Follow on Twitter"><img src="assets/icons/twitter.svg" alt="" /></a>
-      <a href="#" aria-label="Follow on LinkedIn"><img src="assets/icons/linkedin.svg" alt="" /></a>
-    </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 MyResumeDesign. Built by [Your Name].</p>
-  </footer>
-  <script src="script.js" defer></script>
+    <script src="script.js"></script>
 </body>
 </html>
